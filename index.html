@@ -115,11 +115,11 @@
                     <script type="text/template">
                       现如今
                       
-                      - 硬件变软件 *Software*
+                      - 硬件被软件取代 *Software*
                       
                       - 软件/数字调音台 *digital mixer*
                       
-                      - 电脑非编操作 *Nonlinearity*
+                      - 电脑非线性编辑 *Nonlinearity*
                     </script>
                 </section>
 
@@ -130,7 +130,7 @@
 <!-- 第二日 --->
                 <section data-markdown>
                     <script type="text/template">
-                        ### 2 混音软件？
+                        ### 2 混音软件
 
                         # *数字音频工作站*
 
@@ -158,19 +158,14 @@
                     style="background:rgba(0,0,0,0.8)"
                 >
                     <script type="text/template">
-                    还有哪些软件属于DAW？                    
-                        - *Audition*
-
-                        - *Studio One*
-
-                        - *Ableton Live*
-                        
-                        - *Logic*
-                        
-                        - *FL Studio*
-                        
-                        - *SONAR*
-                        
+                      还有...
+                      
+                      - *Audition*
+                      
+                      - *Ableton Live*
+                      
+                      - *Logic*
+                      
                         还有很多很多...
                     </script>
                 </section>
@@ -232,7 +227,7 @@
                         ASIO是什么？ *专业声卡才拥有的低延迟专业驱动*
                         <!-- .element: class="fragment" -->
 
-                        ## 所以请别碰700以下的国产玩具
+                        ## 所以请别碰700元以下的国产玩具
                         <!-- .element: class="fragment" -->
                     </script>
                 </section>
@@ -243,78 +238,49 @@
                         <!-- .element: class="fragment" -->
 
                         ## 只有在听到真实声音的情况下才能正确的混音
-
+                        <!-- .element: class="fragment" -->
                     </script>
                 </section>
 
 <!-- 第四日 --->
                 <section data-markdown>
                     <script type="text/template">
-                        ### 第四日 号角吹响
+                        ### 4 去哪学混音？
 
-                        # *CommonJS*
+                        # *当然是找小啵老师*
 
-                        征服世界的第一步是跳出浏览器
+                        免费优质的教学资源还有谁？
                     </script>
                 </section>
 
                 <section data-markdown>
                     <script type="text/template">
-                        ## [CommonJS](http://www.commonjs.org/) - API Standard
-
-                        (2009.08)
-
-                        <img src="attach/commonjs-logo.png" class="logo" style="max-width:200px" />
-
-                        > *javascript:<br> not just for browsers any more!*
+                        # [如果你不甘于网站上有限的教程]
                     </script>
                 </section>
 
                 <section data-markdown>
                     <script type="text/template">
-                        # [Modules/1.0](http://wiki.commonjs.org/wiki/Modules/1.0)
+                        # [那么下面的内容对你来说非常重要]
                     </script>
                 </section>
 
                 <section data-markdown>
                     <script type="text/template">
-                        模块的定义与引用
+                        从小白进阶大佬的必备 *小啵混音课*
+                        <!-- .element: class="fragment" -->
 
-                        ```javascript
-                        // math.js
-                        exports.add = function(a, b){
-                            return a + b;
-                        }
-                        ```
-                        ```javascript
-                        // main.js
-                        var math = require('math')      // ./math in node
-                        console.log(math.add(1, 2));    // 3
-                        ```
-
-                        *Magic Free Variable*
+                        ## 小啵老师一步一步教你如何把想法变成办法
                         <!-- .element: class="fragment" -->
                     </script>
                 </section>
 
                 <section data-markdown>
                     <script type="text/template">
-                        [NodeJS](http://nodejs.org) : Simple HTTP Server
+                        如果你经常浏览小啵的网站 *已掌握了一定的基础*
+                        <!-- .element: class="fragment" -->
 
-                        ```javascript
-                        // server.js
-                        var http = require("http"),
-                            PORT = 8000;
-
-                        http.createServer(function(req, res){
-                            res.end("Hello World");
-                        }).listen(PORT);
-
-                        console.log("listenning to " + PORT);
-                        ```
-                        ```
-                        $ node server.js
-                        ```
+                        ## 小啵老师将带领你继续升上更高的殿堂
                         <!-- .element: class="fragment" -->
 
                     </script>
@@ -322,1031 +288,34 @@
 
                 <section data-markdown>
                     <script type="text/template">
-                        #### Synchronously
+                        # [小啵作为一个垃圾混音师]
 
-                        ```javascript
-                        // timeout.js
-                        var EXE_TIME = 2;
-
-                        (function(second){
-                            var start = +new Date();
-                            while(start + second*1000 > new Date()){}
-                        })(EXE_TIME)
-
-                        console.log("2000ms executed")
-                        ```
-                        ```
-                        // main.js
-                        require('./timeout');   // sync load
-                        console.log('done!');
-                        ```
-
-                        *同步/阻塞式加载*
-                        <!-- .element: class="fragment" -->
                     </script>
                 </section>
-
+                
                 <section data-markdown>
                     <script type="text/template">
-                        同步加载对服务器/本地环境并不是问题
-
-                        <br>
-
-                         硬盘 I/O | | 网速 I/O
-                        -----|------- | ------|-------
-                        HDD: | *100 MB/s*  | ADSL: | *4 Mb/s*
-                        SSD: | *600 MB/s*  | 4G: | *100 Mb/s*
-                        SATA-III:| *6000 Mb/s*  | Fiber: | *100 Mb/s*
-
-                        <br>
-
-                        ### *浏览器环境才是问题！*
-                        <!-- .element: class="fragment" -->
+                        # [学成后的你必定比我更加优秀]
                     </script>
                 </section>
-
-<!-- 第五日 --->
-                <section data-markdown>
-                    <script type="text/template">
-                        ### 第五日 双塔奇兵
-
-                        # *AMD/CMD*
-
-                        浏览器环境模块化方案
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        分歧和冲突
-
-                        ## *[Modules/Async](http://wiki.commonjs.org/wiki/Modules/AsynchronousDefinition)*
-                        ## *[Modules/Wrappings](http://wiki.commonjs.org/wiki/Modules/Wrappings)*
-
-                        <div class="fragment">
-
-                        <h3>*Modules/Transport*</h3>
-                        <h4>*<del>Modules/2.0</del>*</h4>
-
-                        </div>
-
-                        <small style="margin-top:15px">
-                            [《前端模块化开发的那点历史 - 玉伯》](https://github.com/seajs/seajs/issues/588)
-                        </small>
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ## *[AMD(Async Module Definition)](http://wiki.commonjs.org/wiki/Modules/AsynchronousDefinition)*
-
-                        RequireJS 对模块定义的规范化产出
-
-                        <br>
-
-                        ## *[CMD(Common Module Definition)](https://github.com/cmdjs/specification/blob/master/draft/module.md)*
-
-                        SeaJS 对模块定义的规范化产出
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ## [RequireJS](http://requirejs.org/) - AMD Implementation
-
-                        (2011)
-
-                        <img src="attach/requirejs-logo.svg"
-                            class="logo"
-                            style="max-width:130px; margin:0px" />
-
-                        > *JavaScript file and module loader.<br> It is optimized for in-browser use*
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        If `require()` is async?
-
-                        ```
-                        //CommonJS Syntax
-                        var Employee = require("types/Employee");
-
-                        function Programmer (){
-                            //do something
-                        }
-
-                        Programmer.prototype = new Employee();
-
-                        //如果 require call 是异步的，那么肯定 error
-                        //因为在执行这句前 Employee 模块根本来不及加载进来
-                        ```
-
-                        *this code will not work*
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ### *Function Wrapping*
-
-                        ```
-                        //AMD Wrapper
-                        define(
-                            ["types/Employee"],  //依赖
-                            function(Employee){  //这个回调会在所有依赖都被加载后才执行
-                                function Programmer(){
-                                    //do something
-                                };
-
-                                Programmer.prototype = new Employee();
-                                return Programmer;  //return Constructor
-                            }
-                        )
-
-                        ```
-                        looks familiar?
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        *Sugar - simplified CommonJS wrapping*
-
-                        ```javascript
-                        define(function (require) {
-                            var dependency1 = require('dependency1'),
-                                dependency2 = require('dependency2');
-
-                            return function () {};
-                        });
-                        ```
-                        ```javascript
-                        // parse out require...
-                        define(
-                            ['require', 'dependency1', 'dependency2'],
-                        function (require) {
-                            var dependency1 = require('dependency1'),
-                                dependency2 = require('dependency2');
-
-                            return function () {};
-                        });
-                        ```
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        *AMD vs CommonJS*
-
-                        ### 书写风格
-
-                        ```javascript
-                        // Module/1.0
-                        var a = require("./a");  // 依赖就近
-                        a.doSomething();
-
-                        var b = require("./b")
-                        b.doSomething();
-                        ```
-
-                        ```javascript
-                        // AMD recommended style
-                        define(["a", "b"], function(a, b){ // 依赖前置
-                            a.doSomething();
-                            b.doSomething();
-                        })
-                        ```
-
-                        *Both OK*
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        *AMD vs CommonJS*
-
-                        ### 执行时机
-
-                        ```
-                        // Module/1.0
-                        var a = require("./a");  // 执行到此时，a.js 同步下载并执行
-                        ```
-
-                        ```
-                        // AMD with CommonJS sugar
-                        define(["require"], function(require){
-                            // 在这里， a.js 已经下载并且执行好了
-                            var a = require("./a")
-                        })
-
-                        ```
-
-                        *Early Download, Early Executing*
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ## [SeaJS](http://seajs.org/docs/) - CMD Implementation
-
-                        (2011)
-
-                        <img src="attach/seajs-logo.png" class="logo" />
-
-                        > *Extremely simple experience of modular development*
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        *More like CommonJS Style*
-
-                        ```javascript
-                        define(function(require, exports) {
-                            var a = require('./a');
-                            a.doSomething();
-
-                            exports.foo = 'bar';
-                            exports.doSomething = function() {};
-                        });
-                        ```
-                        ```javascript
-                        // RequireJS 兼容风格
-                        define('hello', ['jquery'], function(require, exports, module) {
-                            return {
-                                foo: 'bar',
-                                doSomething: function() {}
-                            };
-                        });
-                        ```
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        *AMD vs CMD - the truly different*
-
-                        ### Still Execution Time
-
-                        ```
-                        // AMD recommended
-                        define(['a', 'b'], function(a, b){
-                            a.doSomething();    // 依赖前置，提前执行
-                            b.doSomething();
-                        })
-                        ```
-                        ```
-                        // CMD recommanded
-                        define(function(require, exports, module){
-                            var a = require("a");
-                            a.doSomething();
-                            var b = require("b");
-                            b.doSomething();    // 依赖就近，延迟执行
-                        })
-
-                        ```
-
-                        *Early Download, Lazy Executing*
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        *RequireJS 最佳实践*
-                        <small style="
-                            vertical-align: baseline;
-                            margin-left: 10px;
-                        ">
-                            <a href="#/47">跳过</a>
-                        </small>
-
-                        ### Use Case
-
-                        ```javascript
-                        require([
-                            'React',    // 尽量使用 ModuleID
-                            'IScroll',
-                            'FastClick'
-                            'navBar',   // 和同目录下的 js 文件
-                            'tabBar',
-                        ], function(
-                            React,      // Export
-                            IScroll
-                            FastClick
-                            NavBar,
-                            TabBar,
-                        ) {
-                        ```
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        *RequireJS 最佳实践*
-
-                        ### Config
-
-                        ```javascript
-                        require.config({
-                            // 查找根路径，当加载包含协议或以/开头、.js结尾的文件时不启用
-                            baseUrl: "./js",
-                            // 配置 ModuleID 与 路径 的映射
-                            paths: {
-                                React: "lib/react-with-addons",
-                                FastClick: "http://cdn.bootcss.com/fastclick/1.0.3/fastclick.min",
-                                IScroll: "lib/iscroll",
-                            },
-                            // 为那些“全局变量注入”型脚本做依赖和导出配置
-                            shim: {
-                                'IScroll': {
-                                    exports: "IScroll"
-                                },
-                            },
-                            // 从 CommonJS 包中加载模块
-                            packages: [
-                                {
-                                    name: "ReactChart",
-                                    location: "lib/react-chart",
-                                    main: "index"
-                                }
-                            ]
-                        })
-                        ```
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        *RequireJS 最佳实践*
-
-                        ### Optimized Build
-
-                        ```bash
-                        node r.js -o build.js
-                        ```
-                        ```javascript
-                        // build.js
-                        // 简单的说，要把所有配置 repeat 一遍
-                        ({
-                            appDir: './src',
-                            baseUrl: './js',
-                            dir: './dist',
-                            modules: [
-                                {
-                                    name: 'app'
-                                }
-                            ],
-                            fileExclusionRegExp: /^(r|build)\.js$/,
-                            optimizeCss: 'standard',
-                            removeCombined: true,
-                            paths: {
-                                React : "lib/react-with-addons",
-                                FastClick: "http://cdn.bootcss.com/fastclick/1.0.3/fastclick.min",
-                                IScroll: "lib/iscroll"
-                            },
-                            shim: {
-                                'IScroll': {
-                                    exports: "IScroll"
-                                },
-                            },
-                            packages: [
-                                {
-                                    name: "ReactChart",
-                                    location: "lib/react-chart",
-                                    main: "index"
-                                }
-                            ]
-                        })
-                        ```
-                    </script>
-                </section>
-
-<!-- 第六日 --->
-                <section data-markdown>
-                    <script type="text/template">
-                        ### 第六日 精灵宝钻
-
-                        # *Browserify/Webpack*
-
-                        大势所趋，去掉这层包裹！
-                    </script>
-                </section>
-
-                <section data-markdown data-background="attach/npm.png"
-                    style="background: rgba(0,0,0,0.7)"
-                >
-                    <script type="text/template">
-                        # *[NPM](https://www.npmjs.com/)*
-                        Node Package Manger
-
-                        *Browsers don't have the require method defined, <br>but Node.js does.*
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ## [Browserify](http://browserify.org/) - CommonJS in browser
-
-                        (2011 / 2014 stable)
-
-                        <img src="attach/browserify-logo.png" class="logo" style="width:320px;margin-bottom:-40px" />
-
-                        > *require('modules') in the browser by bundling up all of your dependencies*
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        Install
-
-                        ```
-                        $ npm install -g browserify
-                        ```
-                        ### *Actually you need do nothing but write CommonJS code!*
-                        <!-- .element: class="fragment" -->
-
-                        ```
-                        # magic just happened!
-                        $ browserify main.js -o bundle.js
-                        ```
-                        <!-- .element: class="fragment" -->
-
-                        #### *Demo Time*
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        A Little Low-Level
-
-                        *Browserify parses the AST for require() calls to traverse the entire dependency graph of your project.*
-
-                        ### [AST: Abstract Syntax Tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree)
-                        <!-- .element: class="fragment" -->
-
-                        <img src="attach/ast.png" class="logo fragment" style="width:320px;" />
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        每一次改动都需要手动 recompile ？
-
-                        No, auto-recompile.
-
-                        ## *Watch - [Watchify](https://www.npmjs.com/package/watchify)*
-                        <!-- .element: class="fragment" -->
-
-                        ```
-                        $ npm install -g watchify
-                        ```
-                        <!-- .element: class="fragment" -->
-
-                        ```
-                        # WATCH!
-                        $ watchify app.js -o bundle.js -v
-                        ```
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        Build 后要如何 Debug
-
-                        ## *Source Map*
-                        <!-- .element: class="fragment" -->
-
-                        ```bash
-                        # debug mode
-                        $ browserify main.js -o bundle.js --debug
-                        ```
-                        <!-- .element: class="fragment" -->
-
-                        *逆向所有合并、压缩、混淆！*
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ## *`npm run`*
-
-                        ```
-                        $ npm run [command] [-- <args>]
-                        ```
-                        <!-- .element: class="fragment" -->
-
-                        ```javascript
-                        // package.json
-                        {
-                            //....
-                            "scripts": {
-                                "build": "browserify app.js -o bundle.js",
-                                "watch": "watchify app.js -o bundle.js -v"
-                            }
-                        }
-                        ```
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ## [Webpack](http://webpack.github.io/) - Module Bundler
-
-                        (2014)
-
-                        <img src="attach/webpack-icon.png" class="logo" style="width:320px;margin-bottom:-60px" />
-
-                        > *transforming, bundling, or packaging just about any resource or asset*
-                    </script>
-                </section>
-
 
 
                 <section data-markdown>
                     <script type="text/template">
-                        Webpack For Browserify Users
+                        # *更多详情请咨询小啵老师的助手*
 
-                        ```bash
-                        # These are equivalent:
-                        $ browserify main.js > bundle.js
-                        $ webpack main.js bundle.js
-                        ```
-
-                        *BUT*
-                        ```javascript
-                        // better with a webpack.config.js
-                        module.exports = {
-                            entry: "./main.js",
-                            output: {
-                                filename: "bundle.js"
-                            }
-                        }
-                        ```
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ### *Simple [CLI](http://webpack.github.io/docs/cli.html)*
-
-                        ```bash
-                        # make sure your directory contains webpack.config.js
-
-                        # Development: debug + devtool + source-map + pathinfo
-                        webpack main.js bundle.js -d
-
-                        # Production: minimize + occurence-order
-                        webpack main.js bundle.js -p
-
-                        # Watch Mode
-                        webpack main.js bundle.js --watch
-                        ```
-
-                        Everything is already there!
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        *Browserify vs Webpack*
-
-                        ## 小而美 VS 大而全
-
-                        <br>
-
-                        - [Browserify VS Webpack - JS Drama](http://blog.namangoel.com/browserify-vs-webpack-js-drama)
-                        - [Comparison - Webpack](http://webpack.github.io/docs/comparison.html)
-                        - [Webpack for browserify users](http://webpack.github.io/docs/webpack-for-browserify-users.html)
-                        - [Browserify for webpack users](https://gist.github.com/substack/68f8d502be42d5cd4942)
+                        QQ：3219608935.
 
                     </script>
                 </section>
 
-                <style>
-                    .bloom{
-                        transform: scale(0);
-                        transition: transform 0.7s cubic-bezier(0.68, 0.04, 0.49, 0.95);
-                    }
-                    .present .bloom{
-                        transform: scale(1);
-                    }
-                </style>
-                <section data-markdown>
-                    <script type="text/template">
-                        <div class="bloom">
-                            Is webpack just the other Browserify?
-                            <div>
-                                <h1>Webpack - *Like a pro* </h1>
-                                <p>webpack *特别增强篇*</p>
-                            </div>
-                            <img src="attach/webpack-icon.png" class="logo" width="220" />
-                        </div>
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ## [Motivation](http://webpack.github.io/docs/motivation.html)
-
-                        - Compatibility (CommonJS, AMD, ES6...)
-
-                        - Code Splitting
-
-                        - Loaders & Plugins
-
-                        - Development Tools & Workflow
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ### *[Using Loaders](http://webpack.github.io/docs/using-loaders.html)*
-
-                        ```javascript
-                        // webpack.config.js
-                        module.exports = {
-                            entry: './main.js',
-                            output: {
-                                filename: 'bundle.js'
-                            }{,
-                            module: {
-                                loaders: [{
-                                    test: /\.js$/,
-                                    loader: 'babel-loader'
-                                }]
-                            }}
-                        }
-                        ```
-
-                        ***JSX Demo***
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ## *[Why only JavaScript?](http://webpack.github.io/docs/motivation.html#why-only-javascript)*
-
-                        > There are many other *static resources* that need to be handled
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ### *require()* static resources!
-
-                        ```javascript
-                        // Ensure the stylesheet is loaded
-                        require('./bootstrap.css');
-
-                        // get a URL or DataURI
-                        var myImage = document.createElement('img');
-                        myImage.src = require('./myImage.jpg');
-                        ```
-
-                        <blockquote class="fragment">
-                            <p>They are part of *dependency graph*</p>
-                        </blockquote>
-
-                        *包含静态资源的依赖管理*
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ### *require()* anything!
-
-                        ```javascript
-                        // CSS Preprocesser
-                        require('./style.less');
-                        require('./anotherStyle.scss');
-
-                        // Compile-to-JS Language
-                        var myModule = require('./myModule.coffee');
-                        var myTypedModule = require('./myTypedModule.ts');
-                        ```
-
-                        Universal Module System
-                        <!-- .element: class="fragment" -->
-
-                        *对所有模块一视同仁的的依赖管理*
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ### *Sass & Images*
-
-                        ```javascript
-                        var webpackConfig = {
-                            module: {
-                                loaders: [{
-                                    test: /\.scss$/,
-                                    loaders: 'style!css!sass'
-                                }, {
-                                    test: /\.(png|jpg|svg)$/,
-                                    loader: 'url?limit=20480' //20k
-                                }]
-                            }}
-                        }
-                        ```
-
-                        * Deal with CSS problems
-                        <!-- .element: class="fragment" -->
-
-                        * Inlining your images to DataURI
-                        <!-- .element: class="fragment" -->
-
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ### *[Using Plugins](http://webpack.github.io/docs/using-plugins.html)*
-
-                        ```javascript
-                        var config = {
-                            entry: ['webpack/hot/dev-server', './app/main.js'],
-                            module: {
-                                loaders: [{
-                                    test: /\.(js|jsx)$/,
-                                    loaders: ['react-hot', 'babel']
-                                }]
-                            },
-                            plugins: [
-                                //Enables Hot Modules Replacement
-                                new webpack.HotModuleReplacementPlugin(),
-                            ],
-                        };
-                        ```
-
-                        #### [React Hot Loader!](http://gaearon.github.io/react-hot-loader/)
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ### *[Code Splitting](http://webpack.github.io/docs/code-splitting.html)*
-
-                        > split your codebase into “chunks” which are loaded on demand.
-
-                        - [Optimizing Common Code](https://github.com/petehunt/webpack-howto#8-optimizing-common-code)
-                        <!-- .element: class="fragment" -->
-
-                        - [Async Loading ](https://github.com/petehunt/webpack-howto#9-async-loading)
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        More Resources
-
-                        ## [Webpack Howto (Pete Hunt)](https://github.com/petehunt/webpack-howto)
-                        ## [React Webpack Cookbook](http://christianalfoni.github.io/react-webpack-cookbook/index.html)
-
-
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ### 第七日 王者归来
-
-                        # *ES6 Module*
-
-                        最后的战役
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ### There is no module in JavaScript!
-
-                        <p class="fragment"> (Until *ECMAScript 6*) </p>
-                        <!-- .element: class="fragment" -->
-
-                        ### Well...But there is no runtime...
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ## [Babel](https://babeljs.io/) - JavaScript Compiler
-
-                        (2015)
-
-                        <img src="attach/babel-logo.png" class="logo" style="width:300px;margin:0;margin-bottom:-50px" />
-
-                        > *Use next generation JavaScript, today.*
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        Let's get into it!!
-
-                        ### *Single Default Module*
-
-                        ```dart
-                        // math.js
-                        export default math = {
-                            PI: 3.14,
-                            foo: function(){}
-                        }
-                        ```
-
-                        ```dart
-                        // app.js
-                        import math from "./math";
-                        math.PI
-                        ```
-
-                        ```
-                        # babel magic!
-                        $ babel-node app.js
-                        ```
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ### *With ES6 Destructuring*
-
-                        ```dart
-                        // components.js
-                        import Button from './Button';
-                        import Header from './Header';
-
-                        // use property value shorthand
-                        export {
-                            Button,
-                            Header
-                        }
-                        ```
-                        ```dart
-                        // app.js
-                        import { Button, Header } from "./components";
-                        ```
-
-                        *Sooooo Awesome!*
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ### *Export Members*
-
-                        ```dart
-                        // export Declaration
-                        export function foo(){
-                            console.log('I am not bar.');
-                        }
-                        ```
-                        ```dart
-                        // export VariableStatement;
-                        export var PI = 3.14;
-                        export var bar = foo;   // function expression
-                        ```
-                        ```dart
-                        // export { ExportsList }
-                        var PI = 3.14;
-                        var foo = function(){};
-
-                        export { PI, foo };
-                        ```
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ### *Import Members*
-
-                        ```dart
-                        // import { ImportsList } from "module-name"
-                        import { PI } from "./math";
-                        import { PI, foo } from "module-name";
-                        ```
-
-                        ```dart
-                        // import IdentifierName as ImportedBinding
-                        import { foo as bar } from "./math";
-                        bar();  // use alias bar
-                        ```
-
-                        ```dart
-                        // import NameSpaceImport
-                        import * as math from "./math";
-                        math.PI
-                        math.foo()
-                        ```
-
-                        *[Airbnb JavaScript Style Guide - Modules](https://github.com/airbnb/javascript#modules)*
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ### *For more detail...*
-
-                        ## [ECMA-262/6.0/#Exports](http://www.ecma-international.org/ecma-262/6.0/#sec-exports)
-                        ## [ECMA-262/6.0/#Imports](http://www.ecma-international.org/ecma-262/6.0/#sec-imports)
-
-                        <span style="font-size:55px">“ </span>
-                        <small style="vertical-align:text-top"> 习惯了就会觉得很好用的 (´Д` ) ”</small>
-                        <span style="padding-left:22px"></span>
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        <div style="
-                            position: relative;
-                            margin-left: -300px;">
-                            <img src="attach/babel-logo.png" class="logo" style="width:300px;margin:0;margin-bottom:-35px" />
-                            <h1>*×*</h1>
-                            <h2 style="
-                                position: absolute;
-                                right: 150px;
-                                top:134px;
-                                font-style: italic;
-                            ">[= babelify](https://github.com/babel/babelify)</h2>
-                            <img src="attach/browserify-logo.png" class="logo" style="width:400px;margin-top:-70px" />
-                        </div>
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        <div style="
-                            position: relative;
-                            margin-left: -300px;">
-                            <img src="attach/babel-logo.png" class="logo" style="width:300px;margin:0;margin-bottom:-35px" />
-                            <h1>*×*</h1>
-                            <h2 style="
-                                position: absolute;
-                                right: 100px;
-                                top:134px;
-                                font-style: italic;
-                            ">[= babel-loader](https://github.com/babel/babel-loader)</h2>
-                            <img src="attach/webpack-icon.png" class="logo" style="width:380px;margin-top:-30px" />
-                        </div>
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        # *Question*
-
-                        Hey, don't be shy.
-
-                    </script>
-                </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        <img src="attach/qrcode.png" style="
-                            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-                            width: 350px;
-                            height: 350px;
-                        " />
-
-                        #### [huangxuan.me/js-module-7day](http://huangxuan.me/js-module-7day/#/)
-
-                        <small style="font-size: 0.85em">
-                        *[Open Source @ Github](https://github.com/Huxpro/js-module-7day)*
-                        </small>
-                    </script>
-                </section>
 
                 <section style="text-align: left;">
                     <h1>THE END</h1>
 
-                    <h5>黄玄</h5>
+                    <h5>小啵老师(JunjSix)</h5>
                     <small>
-                        <a href="http://huangxuan.me">Blog</a> /
-                        <a href="http://weibo.com/huxpro">@Huxpro</a> /
-                        <a href="https://github.com/huxpro">GitHub</a> /
-                        <a href="http://www.zhihu.com/people/huxpro">知乎</a>
+                        <a href="http://www.sixbor.com">点击返回网站</a> 
                     </small>
                 </section>
             </div>
